@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title></title>  
+
+
+
+</head>
+<body>
+    <form  onsubmit="return validate()">
+        <div class="main">
+           <div class="main1">
+           name : <input type="text" id="text" onkeyup="space(this.value)">
+           <br><br>
+           password: <input type="password" id="pass" onkeyup="space(this.value)">
+           <br><br>
+          con password: <input type="password" id="pass1" onkeyup="login(this)">
+          <br><br>
+          <button >login</button>
+          <button type="button" onclick="hp(this)"> hide pass</button>
+          <div id="res">
+
+          </div>
+          <div id="space">
+
+          </div>
+          <div class="abc">number</div>
+          <div class="abc">lowercaase</div>
+          <div class="abc">at least 8</div>
+        </div>
+        </div>
+    </form>
+</body>
+<script>
+    var regex = /^(?=.*[0-9])/;
+    var regex2=/(?=.*[a-z])/;
+    var regex3=/.{8,}$/;
+function space(ele){
+ if(regex.test(ele)){
+    document.getElementsByClassName("abc")[0].style.color="green"
+ }
+ else{
+    document.getElementsByClassName("abc")[0].style.color="red"
+ }
+ if(regex2.test(ele)){
+    document.getElementsByClassName("abc")[1].style.color="green"
+ }
+ else{
+    document.getElementsByClassName("abc")[1].style.color="red"
+ }
+ if(regex3.test(ele)){
+    document.getElementsByClassName("abc")[2].style.color="green"
+ }
+ else{
+    document.getElementsByClassName("abc")[2].style.color="red"
+ }
+}
+</script>
+</html>

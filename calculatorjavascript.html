@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>
+    calc
+    </title>
+</head>
+<body>
+<input type="number" id="n1">
+<select id="n3">
+<option value="+">+</option>
+<option>-</option>
+<option>*</option>
+<option>/</option>
+<input type="number" id="n2">
+<button onclick="cal()">cal</button>
+<input type="text" id="text" "readonly">
+
+</body>
+<script>
+    function cal(){
+        var a=document.getElementById("n1").value
+        var b=document.getElementById("n2").value
+        var c=document.getElementById("n3").value
+    if (c=='+'){
+        var d=parseInt(a)+parseInt(b);
+    }
+    if (c=='-'){
+       var d=parseInt(a)-parseInt(b);
+    }
+    if (c=='*'){
+      var  d=parseInt(a)*parseInt(b);
+    }
+    if (c=='/'){
+       var d=parseInt(a)/parseInt(b);
+    }
+    document.getElementById("text").value=d;
+}
+</script>
+</html>

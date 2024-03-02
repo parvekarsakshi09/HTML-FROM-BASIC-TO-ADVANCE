@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+              html with js
+        </title>
+        <style>
+             h1{
+            text-align:center;
+            cursor: pointer;
+            transition: 2s;
+        }
+        </style>
+       
+    </head>
+    <body>
+    <h1 id="ab" onpointerenter="enter()" onpointerleave="exit()">welcome sakshi </h1>
+
+    </body>
+    <script>
+        function enter(){
+              document.getElementById("ab").style.color="red";
+              document.getElementById("ab").style.fontSize="150px";
+        }
+        function exit(){
+            document.getElementById("ab").style.color="green"
+            document.getElementById("ab").style.fontSize="50px";
+        }
+    </script>
+</html>

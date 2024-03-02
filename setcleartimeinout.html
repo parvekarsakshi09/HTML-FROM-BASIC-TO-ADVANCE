@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>settimefunctions</title>
+    </head>
+    <body>
+        <button class="bt" onclick="btm()">set</button>
+        <button class="bt" onclick="btn()">cancel</button>
+        <h1 class="qw"></h1>
+        <script>
+            var my;
+            i=0;
+            function btm(){
+               my= setTimeout(
+                    function (){
+                    //    for(i=0;i<10;i++){
+                        document.getElementsByClassName("qw")[0].innerText=i
+                        i++;
+                    //    }
+                    },1000
+                );
+            }
+            function btn(){
+                clearTimeout(my);
+                alert("cleared")
+            }
+            // document.getElementByClassName("bt")[1].style.color="pink"; 
+        </script>
+    </body>
+</html>

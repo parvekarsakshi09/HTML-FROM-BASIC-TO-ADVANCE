@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            regular exp
+        </title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+    //     // var pattern=/[a-z][0-9]/g;
+    //     // var str="wgry52gr63fv"
+    //    var pattern=new RegExp("[a-z][0-1]","i")
+    // //    console.log( pattern.exec(str));
+    // console.log(pattern.toString())
+
+
+    var regex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\S+$).{8,20}$/
+    var str="Geeks@portal20"
+    console.log( regex.test(str));
+
+    </script>
+</html>

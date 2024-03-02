@@ -1,0 +1,15 @@
+.main{
+    height: 500px;
+    width: 700px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 50px ;
+    color:blue;
+    margin: auto;
+    border: 2px solid green;
+}
+.main:hover{
+    background-color: rgb(43, 226, 95);
+    color: brown;
+    height: 200px;
+}

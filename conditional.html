@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>
+          condi
+        </title>
+    </head>
+    <body>
+     <input type="number"  id="n1">
+     
+     <select id="n3">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+     </select>
+     <input type="number" id="n2">
+     <button id="calc" onclick="calc()">calc</button>
+     <input type="text" id="text">
+    </body>
+    <script>
+    //      var a=43;
+    //   if( a==18){
+    //     document.write("yes vote eligible");
+    //   }
+    //   else if(a>19 && a<65){
+        
+    //     document.write("may");
+    //   }
+    //   else{
+    //     document.write("no vote");
+    //   } -->
+    //   for(var i=10;i>0;i--){
+    //     if(i==5){
+    //         break
+    //     }
+    //     document.write(i+"<br>");
+    //   }
+//    var i=10;
+//       while(i>0){
+//         if(i==5){
+     
+//             continue;
+//         }
+//     console.log(i);
+//     i--;
+   
+//      }
+// var i = 10;
+// while (i >= 0) {
+//     if (i%2==3) {
+//         i--;  // Fix: Decrement i here to avoid infinite loop
+//         break;
+//     }
+//     document.write(i);
+//     i--;
+// }
+// var a=[];
+// a=["c1","c2","c3"];
+// a[3]="c4";
+// document.write(a);
+var a=new Array();
+a=["c1","c2","c3"];
+a[4]="vd"
+a[5]="gg"
+document.write(a)
+
+// var car=["car1","car2","car3"];
+// car.forEach(cary);
+// function cary(item,index,arr){
+//   arr[index]=item+"0";
+// }
+// car.forEach(cary2);
+// function cary2(item,index,arr){
+//  document.write(item,index);
+// }
+ function calc(){
+
+var a=parseFloat(document.getElementById("n1").value);
+var b=parseFloat(document.getElementById("n2").value);
+var c=document.getElementById("n3").value;
+var d;
+
+switch(c){
+    case "+":
+                d = a+b;
+                break;
+            case "-":
+                d = parseFloat(a) - parseFloat(b);
+                break;
+            case "*":
+                d = parseFloat(a) * parseFloat(b);
+                break;
+            case "/":
+                d = parseFloat(a) / parseFloat(b);
+                break;
+    default:
+        d="huuu"
+}
+document.getElementById("text").value=d
+}
+    </script>
+</html>

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>grid</title>
+        <style>
+         .main{
+            height: 600px;
+            width: 500px;
+            margin: auto;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 150px 150px auto;
+            /* grid-column-gap: 20px ;
+            grid-row-gap: 40px; */
+            /* grid-gap:20px 30px; */
+            
+
+         }
+         .main div{
+            
+            background-color: aqua;
+            border: 2px solid green;
+            margin: 10px;
+
+         }
+         #id1{
+            /* grid-column-start: 1;
+            /* grid-column-end: 4; */
+            grid-row-start: 1; 
+            grid-row-end: 4;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div id="id1">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </body>
+</html>

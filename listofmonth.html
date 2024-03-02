@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div id="mi">
+
+        </div>
+        <button onclick="getdate()">date</button>
+        <button onclick="getyear()">year</button>
+        <button onclick="getmonth()">month</button>
+        <button onclick="gethour()">hour</button>
+        <button onclick="getmin()">minute</button>
+        <button onclick="getd()">d</button>
+        <button onclick="getday()">day</button>
+        <button onclick="gettime()">time</button>
+        <button onclick="getsecond()">sec</button>
+        name:<input type="text" name="oame">
+        <button onclick="abc()">submit</button>
+        <h1>ans</h1>
+    </body>
+    <script>
+        var date=new Date();
+     function getdate(){
+        document.getElementById("mi").innerHTML=date
+     }
+     function getmonth(){
+        var month=["j","f","m","a","m","j","ju","au","s","o","n","d"]
+        // document.getElementById("mi").innerHTML=date.getMonth();
+        document.getElementById("mi").innerHTML=month[date.getMonth()]
+     }
+     function getyear(){
+        document.getElementById("mi").innerHTML=date.getFullYear();
+     }
+     function gethour(){
+        document.getElementById("mi").innerHTML=date.getHours();
+     }
+     function getmin(){
+        document.getElementById("mi").innerHTML=date.getMinutes();
+     }
+     function getd(){
+        document.getElementById("mi").innerHTML=date.getDate();
+     }
+     function getday(){
+        document.getElementById("mi").innerHTML=date.getDay();
+     }
+     function gettime(){
+        document.getElementById("mi").innerHTML=date.getTime();
+     }
+     function getsecond(){
+        document.getElementById("mi").innerHTML=date.getSeconds();
+     }
+     var a={
+        1:"we",
+        2:"utt"
+     };
+     document.write(typeof(date))
+     function abc(){
+     var q=document.getElementsByName("oame")[0].value;
+     document.getElementsByTagName("h1")[0].innerHTML=q;
+    //  document.write(q);
+    // console.log(q)
+    }
+    </script>
+</html>

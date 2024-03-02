@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>clock</title>
+        <style>
+        #abc{
+                font-size:50px;
+               text-align: center;
+                color:orange
+            }
+          
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id="abc">
+
+    </div>
+        <script>
+            setInterval(() => {
+                var d=new Date() 
+             t=d.getHours()
+             m=d.getMinutes()
+             s=d.getSeconds()
+             var mn='Am'
+             if(s<10){
+                s="0"+s
+             }
+             if(t>12){
+                mn='PM'
+             }
+
+             document.getElementById("abc").innerHTML=t+""+":"+m+""+":"+s+""+ mn;
+            }, 1000);
+            
+
+            </script>
+    </body>
+</html>

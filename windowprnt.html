@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            window print
+        </title>
+        <style>
+            .ab{
+                height:1500px;
+                width: 1500px;
+            }
+       .abc{
+        height:300px;
+        width: 300px;
+        margin: auto;
+       }
+       #re{
+        width:80px;
+        margin: auto;
+        height: 100px;
+        justify-content: center;
+       }
+        </style>
+    </head >
+    <body id="bo">
+        <div class="ab">
+        <div class="abc">
+        <img src="back.jpg" alt="nf" width="100%" height="100%" >
+    </div>
+       <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis dolorum optio et facere amet. Deleniti aspernatur porro pariatur corrupti harum? Magnam, asperiores optio dignissimos temporibus reiciendis voluptatum similique placeat quia saepe consectetur explicabo vitae pariatur nulla itaque voluptates blanditiis numquam nesciunt nobis est praesentium iure sint quibusdam? Ratione cupiditate repudiandae, mollitia provident ipsum ab molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quae, consequuntur minus mollitia odit architecto natus labore illo deleniti corporis a quasi saepe cum ut esse, nihil non at. Magnam corporis iste, necessitatibus quisquam quis mollitia quae? Repellendus earum aut et necessitatibus aperiam recusandae a.
+
+       </p>
+        <button id="re" onclick="mn()">click to print</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim ipsum ratione placeat reprehenderit dicta voluptatem? Consectetur nihil sapiente ex cupiditate totam molestias neque maiores laudantium eaque similique rem nobis accusamus eius labore perferendis rerum accusantium vel maxime, debitis officia commodi? Harum quam iste odio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero tenetur voluptates corporis molestias animi, officiis obcaecati, ipsum accusamus, nam itaque eos. Optio eveniet quos atque exercitationem, quae amet id praesentium ducimus ipsum.</p>
+    </div>
+    </body>
+    <script>
+        function mn(){
+           var bo= document.getElementById("bo").innerHTML;
+           var para= document.getElementById("para").innerHTML;
+           document.getElementById("bo").innerHTML=para;
+       window.print()
+       document.getElementById("bo").innerHTML=bo;
+    //    alert(para)
+        }
+    </script>
+</html>

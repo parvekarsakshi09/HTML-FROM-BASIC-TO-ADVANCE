@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>try catrch</title>
+    </head>
+    <body>
+        <!-- <button onclick="a()">click</button>
+        <div id="ab"> -->
+
+        <!-- </div> -->
+
+    
+        enter a no between 5 to 10
+        <input type="text" id="ab">
+        <button onclick="clickme()">click me</button>
+        <div id="abb">
+    </div>
+
+    </body>
+    <script>
+    //     function a(){
+    //  try{
+    //         //  alert("heyy");
+    //          var n=4
+    //          alert(n.toUpperCase());
+    //  }catch(err){
+    //        document.getElementById("ab").innerHTML=err;
+    //  }
+    // }
+
+    
+    function clickme(){
+        var d=document.getElementById("ab").value;
+
+        try{
+        if(isNaN(d)){
+            throw "no is a null";
+        }
+            else{
+                if(d<5|| d>10){
+                 throw "no out of range"
+                }
+                else{
+                    throw ""
+                }
+            }
+        }catch(err){
+           document.getElementById("abb").innerHTML=err;
+        } 
+        finally{
+          document.getElementById("ab").value=" "
+        }
+        }
+    
+    </script>
+</html>

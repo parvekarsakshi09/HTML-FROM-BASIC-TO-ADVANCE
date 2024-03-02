@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            Transition Property
+        </title>
+        <style>
+            #main{
+                height: 150px;
+                width: 150px;
+                background-color: aqua;
+                position: relative;
+            }
+            #main1{
+                height: 30px;
+                width: 30px;
+                background-color: rgb(255, 145, 0);
+                position: absolute;
+                top:0px;
+                left:0px;
+            }
+        </style>
+    </head>
+    <body>
+       <button id="btn" onclick="mo()">click me</button>
+       <div id="main">
+        <div id="main1">
+
+        </div>
+       </div>
+    </body>
+    <script>
+        
+            var a=document.getElementById("main1");
+            var poe=0;
+            var anim=setInterval(mo,5);
+            function mo(){
+                if(poe==120){
+                    clearInterval(anim)
+                }
+                else{
+                poe++;
+                a.style.top=poe+"px";
+            a.style.left=poe+"px";
+            
+            }
+        }
+            
+
+        
+    </script>
+</html>

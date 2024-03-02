@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+         .main{
+            height: 200px;
+            width: 600px;
+            border:2px solid #000000;
+            margin: auto;
+            position: relative;
+         }
+         .main2{
+            background-color: red;
+            height: 60px;
+            width: 100px;
+            top:50px;
+            position: absolute;
+            left: 30px;
+            animation: box 10s;
+            animation-timing-function: ease-in-out;
+            
+         }
+         @keyframes box{
+            from{
+            left: 30px;
+            }
+            to{
+            left:480px;
+            }
+         }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="main2">
+
+            </div>
+        </div>
+    </body>
+</html>

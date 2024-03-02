@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>sun and cloud</title>
+        <style>
+            *{
+                margin:0px;
+                padding: 0px;
+                overflow: hidden;
+            }
+            .main{
+                border: 2px solid black;
+                height:200px;
+                width: 1500px;
+                position: relative;
+            }
+            .sun{
+                border-radius: 50%;
+                height:100px;
+                width: 100px;
+                background-color: orange;
+                top:50px;
+                left: -5px;
+                position: absolute;
+                animation-name: sun1 ;
+                animation-duration: 3s;
+
+            }
+            .cloud{
+                height: 100px;
+                width: 100px;
+                top: -20px;
+                position: absolute;
+                left: 20px;
+                opacity: 0.8;
+                animation-name: cloud;
+                animation-duration: 5s;
+            }
+            .cloud1{
+                height: 100px;
+                width: 100px;
+                top: 50px;
+                position: absolute;
+                left: 500px;
+                opacity: 0.8;
+                animation-name: cloud1;
+                animation-duration: 5s;
+                animation-delay: 6s;
+            }
+            .cloud2{
+                height: 100px;
+                width: 100px;
+                top: 20px;
+                position: absolute;
+                left: 800px;
+                opacity: 0.8; 
+                animation-name: cloud2;
+                animation-duration: 5s;
+
+            }
+        @keyframes sun1{
+            from{
+                top:50px;
+
+                left: -5px;
+            }
+            to{
+                top:50px;
+                left: 1500px;
+            }
+        }
+        @keyframes cloud{
+            from{
+                left: 20px;
+                top: -20px;
+            }
+            to{
+               top: -20px;
+               left: 1500px;
+            }
+        }
+        @keyframes cloud1{
+            from{
+                left: 500px;
+                top: 50px;
+            }
+            to{
+                left: -10px;
+                top: 50px;
+            }
+        }
+        @keyframes cloud2{
+            from{
+                top: 20px;
+                left: 800px;
+            }
+            to{
+                top: 20px;
+                left: -50px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+          <div class="sun">
+        </div>
+            <div class="cloud" ><img src="cloud.png" alt="nt" width="100%" height="100%">
+
+            </div>
+            <div class="cloud1" ><img src="cloud.png" alt="nt" width="100%" height="100%">
+
+            </div>
+            <div class="cloud2" ><img src="cloud.png" alt="nt" width="100%" height="100%">
+
+            </div>
+          </div>
+            
+        </body>
+</html>

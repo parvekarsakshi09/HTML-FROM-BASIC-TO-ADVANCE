@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+ .red{
+    color:red;
+ }
+ .blue{
+    color:blue;
+ }
+        </style>
+    </head>
+    <body>
+      <div class="red" id="ab">
+      hello everyone
+    </div>
+    <button id="btm" onclick="btn()">click me</button>
+    <div id="res">
+
+    </div>
+    </body>
+    <script>
+        function btn(){
+            
+         var c=document.getElementById("ab").getAttribute("class");
+            var am=document.getElementById("ab")
+        //    document.getElementById("res").innerHTML=c;
+            if(c=="red"){
+                am.setAttribute("class","blue")
+                c=blue;
+            }
+            else{
+              am.setAttribute("class","red")
+                c=red;
+            }
+        }
+    
+    </script>
+</html>

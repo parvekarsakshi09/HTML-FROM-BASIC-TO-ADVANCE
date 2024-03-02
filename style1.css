@@ -1,0 +1,162 @@
+.abc{
+                
+    height:1000px;
+    width: 1500px;
+    /* display: inline-block; */
+   /* border: 2px solid orange; */
+ 
+   
+   
+
+
+}
+.nav{
+    background-color : black;
+    height:40px;
+    width:1500px;
+    color:white;
+    position:fixed;
+    z-index: 9999999;
+    /* padding: 10px; */
+}
+.logo{
+    height:40px;
+    width: 50px;
+    float: left; 
+    position: fixed;
+    /* border: 2px solid orange; */
+    /* top:5px; */
+    
+    }
+    .items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+
+    }
+    ul{
+        
+        list-style-type: none;
+    }
+    ul li a{
+         text-decoration: none; 
+         font-size: 25px;
+        color: white;
+    }
+   ul li{
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+    ul li a:hover{
+        background-color: aqua;
+    }
+.bg{
+/* position: relative; */
+/* top:50px; */
+height: 800px;
+width: 1500px;
+border:2px solid green;
+background-color: white;
+
+}
+
+
+
+ul{
+display: flex;
+justify-content: end;
+align-items: center;
+margin-left:500px;
+}
+
+.bg.row2{
+/* background-color: blueviolet; */
+height: 100px;
+border: 20px solid rgb(213, 225, 32);
+width: 1500px;
+position: relative;
+
+ 
+
+}
+
+.btn{
+    
+padding: 10px;
+opacity: 0.3;
+width: 100px;
+font-size: 20px;
+background-color: bisque;
+cursor: pointer;
+
+}
+.btn:hover{
+color:rgb(23, 23, 24);
+background-color: palevioletred;
+}
+.row2-col1{
+font-size: 25px;
+position: absolute;
+top:300px;
+display: inline-block;
+text-align: center;
+
+left: 100px;
+}
+.row2-col2{
+border: 2px solid gray;
+ opacity:0.9;
+ /* float: left; */
+ position: absolute;
+height:300px;
+width: 300px;
+ left: 1000px;
+ top: 300px;
+
+}
+
+.row2-col3{
+position: absolute;
+
+left:300px;
+top:500px;
+
+font-size: 30px;
+margin: 40px;
+padding: auto;
+
+
+}
+.row1{
+    opacity: 0.5;
+}
+.row3{
+
+display: flex;
+
+border: 5px solid red;
+position: absolute;
+top:810px;
+column-gap: 150px;
+text-align: justify;
+height:480px;
+width: 1490px;
+
+}
+.row3-col1{
+
+margin: 200px auto;
+
+
+}
+
+h1{
+text-align: center;
+color:brown;
+}
+.main a{
+   color:white;
+   text-decoration: none;
+   word-spacing: 1px;
+}

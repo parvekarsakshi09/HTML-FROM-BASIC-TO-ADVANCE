@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            no validate
+        </title>
+        <style>
+
+        </style>
+        <body>
+            
+           enter the no:
+           <input type="text" onkeyup="vali(this)">
+           <div id="res">
+
+           </div>
+        
+        </body>
+        <script>
+            document.getElementById("res").style.color="red"
+           function vali(elem){
+            if (isNaN(elem.value)){
+            document.getElementById("res").innerHTML="please enter numbers"
+            }
+            else{
+                document.getElementById("res").innerHTML=""
+                if(elem.value.length>10){
+                    document.getElementById("res").innerHTML="only 10 are permitted"  
+                }
+                else{
+                    document.getElementById("res").innerHTML=""  
+                }
+            }
+           }
+        </script>
+    </head>
+</html>
